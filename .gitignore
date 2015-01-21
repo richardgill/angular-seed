@@ -1,0 +1,12 @@
+dist/
+.tmp
+node_modules
+app/**/*
+dist/**/*
+logs/
+bower_components/*
+**/*.smbdelete*
+npm-debug.log
+.sass-cache
+.c9
+.DS_Store

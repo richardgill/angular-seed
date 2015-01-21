@@ -1,0 +1,61 @@
+@import "panels.less";
+
+@card-height: 118px;
+
+.search-result-panel-body {
+	&:extend(.panel .panel-body);	
+	padding: 10px;
+	height: @card-height;
+
+	h3 a {
+		font-weight: 400;
+	}
+
+	a {
+		font-weight: 300;
+		color: #5f7676;
+	}
+
+	i.fa {
+		padding-right: 5px;
+	}
+}
+
+.search-result-panel {
+	&:extend(.panel);
+	&:extend(.panel-default);
+	margin-bottom: 20px;
+}
+
+.current-location {
+	color: #2189FF;
+	background-color: #FAFBFC;
+}
+
+.map-result-panel-body {
+	&:extend(.search-result-panel-body);
+	width: 300px;
+	// height: @card-height; 
+	h3 a {
+		&:extend(.search-result-panel-body h3 a);
+	}
+	a {
+		&:extend(.search-result-panel-body a);
+	}
+	i.fa {
+		&:extend(.search-result-panel-body i.fa);
+	}
+}
+
+.map-result-panel {
+	&:extend(.search-result-panel);
+	background-color: transparent;
+}
+
+.activity-label {
+	font-size: 60%;
+}
+
+.gold {
+	color: #EDD741;
+}
